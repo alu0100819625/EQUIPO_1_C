@@ -1,0 +1,87 @@
+\documentclass[spanish,a4paper,10pt]{article}
+
+\usepackage{latexsym,amsfonts,amssymb,amstext,amsthm,float,amsmath}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage[dvips]{epsfig}
+\usepackage{doc}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%123456789012345678901234567890123456789012345678901234567890123456789
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\textheight    29cm
+%\textwidth     15cm
+%\topmargin     -4cm
+%\oddsidemargin  5mm
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\title{Búsqueda de las raíces mediante el método de la biseccion de la función ln(6x)}
+\author{María Jesús Álvarez Rodriguez y Sergio Bello Martín \\ Memoria final del trabajo}
+\date{9 de mayo de 2014 de 2014}
+
+\maketitle
+
+\begin{abstract}
+
+
+\end{abstract}
+
+%\thispagestyle{empty}
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Motivación y Objetivos}
+Con este trabajo hemos querido mediante Python resolver el problema que se nos preenta en este caso. Mediante
+el método de la biseeción buscaremos las raíces de la función(ln6x)
+Objetivo principal: Implementación con Python de la bisección de la función ln(6x)
+Objetivo específico:
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Fundamentos teóricos}
+Método de la Bisección:
+
+ El método de la bisección o corte binario es un método de búsqueda incremental que divide el intervalo siempre en 2. Si la función cambia de signo sobre un intervalo, se evalúa el valor
+ de la función en el punto medio. La posición de la raíz se determina situándola en el punto medio del subintervalo donde exista cambio de signo. El proceso se repite hasta mejorar la
+ aproximación
+
+Algoritmo:
+
+ Paso 1
+
+  Elegir los valores iniciales Xa y Xb, de tal forma de que la función cambie de signo:
+
+  f(Xa)f(Xb) < 0
+
+ Paso 2
+
+  La primera aproximación a la raíz se determina con la fórmula del punto medio de esta forma:
+
+ Paso 3
+
+  Realizar las siguientes evaluaciones para determinar el intervalo de la raíz:
+
+    Si f(Xa)f(Xb) < 0, entonces la solución o raíz está entre Xa y Xpm, y Xb pasa a ser el punto medio (Xpm).
+    Si f(Xa)f(Xb) > 0, entonces la solución o raíz está fuera del intervalo entre Xa y el punto medio, y Xa pasa a ser el punto medio (Xpm).
+
+ Paso 4
+
+  Si f(Xa)f(Xb) = 0 ó Error = | Xpm – Xpm – 1 | < Tolerancia
+
+  Donde Xpm es el punto medio de la iteración actual y Xpm – 1 es el punto medio de la iteración anterior.
+
+  Al cumplirse la condición del Paso 4, la raíz o solución es el último punto medio que se obtuvo.
+
+ Para el error relativo porcentual se tiene la siguiente fórmula:
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Entregable}
+
+
+%++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+\section{Bibliografía}
+
+\begin{thebibliography}{1}
+\bibitem{python} http://www.monografias.com/trabajos43/metodo-biseccion/metodo-biseccion.shtml
+\end{thebibliography}
+
+\end{document}
